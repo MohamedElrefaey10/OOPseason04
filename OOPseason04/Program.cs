@@ -71,9 +71,21 @@ namespace OOPseason04
             //SeriesByTwo seriesByTwo = new SeriesByTwo();
             //Print10NumberFromSeries(seriesByTwo);
 
-            SeriesByThree seriesByThree = new SeriesByThree();
-            Print10NumberFromSeries(seriesByThree);
+            //SeriesByThree seriesByThree = new SeriesByThree();
+            //Print10NumberFromSeries(seriesByThree);
 
+            #endregion
+
+            #region Implicit and Explict Implement Interface
+
+            //AirPlane airPlane = new AirPlane();
+            //airPlane.Forword();
+
+            IFlyable AirPlane = new AirPlane();
+            AirPlane.Forword();
+
+            IMoveble AirPlane2 = new AirPlane();
+            AirPlane2.Forword();
             #endregion
 
 
